@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+header{
+    padding: 30px;
+    background-color: #0d0d0d;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+header h1{
+    color: #fff;
+}
+header nav{
+    justify-self: auto;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    color: #fff;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: #bf9c88;
+    color: #0d0d0d;
+    border-radius: 8px;
+    color: #0d0d0d;
+}
+header input{
+    border-radius: 8px;
+}
+.container{
+    width: 100%;
+    min-height: 75vh;
+    background-image: url(images/watches-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-attachment: fixed;
+}
+.container h1{
+    color: #fff;
+}
+.container p{
+    color: #fff;
+}
+.broducts{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: #0d0d0d;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة بنفس العرض */
+    gap: 35px; /* المسافة بين العناصر */
+    justify-items: center; /* لمحاذاة العناصر داخل الخلية أفقياً */
+    align-items: start;
+}
+.broducts .card{
+    background-color: #bf9c88;
+    box-shadow: 0 0 20px #bf9c88;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.broducts .card img{
+    
+    width: 100%;
+}
+.broducts .card h1{
+    text-align: center;
+    color: #59493f;
+    margin: 12px 0;
+}
+.broducts .card button {
+    text-align: center;
+    width: 75%;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #0d0d0d;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #bf9c88;
+    font-size: 18px;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.broducts .card button:hover{
+    cursor: pointer;
+    background-color: #bf9c88;
+    color: #0d0d0d;
+}
+.cameras .card {
+    background-color: black;
+    box-shadow: 0 0 20px #bf9c88;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
